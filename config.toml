@@ -1,0 +1,50 @@
+baseURL = "https://zevy.net/"
+languageCode = "en-us"
+title = "Zevy's Blog"
+
+theme = "paper"
+
+[menu]
+[[menu.main]]
+identifier = "blog"
+name = "blog"
+url = "/posts/"
+weight = 10
+[[menu.main]]
+name = "about"
+url = "/about/"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+
+[params]
+defaultTheme = "dark"
+homeInfoParams = { title = "Blog", content = "About anything that interests me" }
+socialIcons = [ { name = "Github", url = "https://github.com/zevynet/" } ]
+author = "Zevy"
+keywords = ["blog", "computer science", "portfolio", ""]
+DateFormat = "12006 January 2"
+
+# disableThemeToggle: true
+ShowShareButtons = true
+ShowReadingTime = true
+# disableSpecial1stPost: true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
