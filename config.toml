@@ -4,6 +4,14 @@ title = "Zevy's Blog"
 
 theme = "paper"
 
+
+enableInlineShortcodes = true
+enableRobotsTXT =true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
 [menu]
 [[menu.main]]
 identifier = "blog"
@@ -25,7 +33,7 @@ homeInfoParams = { title = "Blog", content = "About anything that interests me" 
 socialIcons = [ { name = "Github", url = "https://github.com/zevynet/" } ]
 author = "Zevy"
 keywords = ["blog", "computer science", "portfolio", ""]
-DateFormat = "12006 January 2"
+DateFormat = "January 2, 2006"
 
 # disableThemeToggle: true
 ShowShareButtons = true
